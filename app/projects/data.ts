@@ -1,61 +1,60 @@
 export type Project = {
   /** Unique, URL-friendly identifier, also used for links like /projects#my-project. */
-  id: string
-  title: string
-  description: string
+  id: string;
+  title: string;
+  description: string;
   /** Free-form date: "2025", "June 2025", or "2024 – Present". */
-  date?: string
+  date?: string;
   /** Optional labeled details: role, collaborators, client, status, or impact. */
-  details?: { label: string; value: string }[]
-  tags?: string[]
+  details?: { label: string; value: string }[];
+  tags?: string[];
   photos?: {
     /** Path relative to public/, e.g. "projects/my-project.jpg". */
-    filename: string
-    alt: string
-    width: number
-    height: number
-    caption?: string
-  }[]
-  links?: { label: string; href: string }[]
-}
+    filename: string;
+    alt: string;
+    width: number;
+    height: number;
+    caption?: string;
+  }[];
+  links?: { label: string; href: string }[];
+};
 
 // Edit this object to update the projects page. Projects appear in array order.
 // Replace the example entries with your work; optional fields can be removed.
 export const projectsPage: {
-  title?: string
-  description?: string
-  projects: Project[]
+  title?: string;
+  description?: string;
+  projects: Project[];
 } = {
   projects: [
     {
-      id: 'example-project',
-      title: 'Example project',
-      description:
-        'Describe what you worked on, the problem it solves, and your contribution. Include what you learned or the impact of the finished work.',
-      date: '2025 – Present',
+      id: "example-project",
+      title: "crab",
+      description: "crab made of cardboard that solves 0 problems.",
+      date: "2026 – Present",
       details: [
-        { label: 'Role', value: 'Designer & developer' },
-        { label: 'Status', value: 'In progress' },
+        { label: "Role", value: "Designer & developer" },
+        { label: "Status", value: "completed" },
       ],
-      tags: ['Electronics'],
+      tags: ["3d art"],
       // Put your images in public/projects/ and add entries like this:
       photos: [
         {
-          filename: 'example-project/electronics.jpg',
-          alt: 'Describe what the photo shows',
+          filename: "example-project/crab.jpeg",
+          alt: "crab",
           width: 1600,
           height: 1000,
-          caption: 'An optional caption or photo credit.',
+          caption: "crab.",
         },
       ],
-      links: [{ label: 'Project website', href: 'https://example.com' }],
+      links: [{ label: "Project website", href: "https://example.com" }],
     },
     {
-      id: 'another-example',
-      title: 'Another example project',
+      id: "another-example",
+      title: "Another example project",
       description:
-        'A project can be as simple as a title and description. Add photos, links, dates, or other details when they help tell the story.',
-      date: 'June 2024',
+        "A project can be as simple as a title and description. Add photos, links, dates, or other details when they help tell the story.",
+      date: "June 2024",
     },
   ],
-}
+};

@@ -1,5 +1,5 @@
 // Your name appears in the top navigation and page titles.
-export const name = "Your Name";
+export const name = "Lila Lin";
 export const websiteDescription = `${name}'s personal website.`;
 
 // Add, remove, or reorder links here. href accepts local paths or external URLs.
@@ -14,17 +14,17 @@ export const navigationLinks = [
 // Edit the main introduction separately in app/components/intro.mdx.
 export const ownerProfile = {
   photo: {
-    filename: "",
+    filename: "remy.jpeg",
     alt: `Portrait of ${name}`,
   },
   facts: [
-    { label: "Now", value: "Your current role or location" },
-    { label: "Studying", value: "What you're studying or working on" },
+    { label: "Now", value: "mit student" },
+    { label: "Studying", value: "stuff" },
     { label: "Interests", value: "Your main interests" },
     {
       label: "Contact",
-      value: "you@example.com",
-      href: "mailto:you@example.com",
+      value: "lilalin@mit.edu",
+      href: "mailto:lilalin@mit.edu",
     },
   ],
   // Heading for the links section below the profile facts.
@@ -33,7 +33,10 @@ export const ownerProfile = {
   // Add, remove, or reorder entries; use [] to hide the list.
   links: [
     { label: "LinkedIn", href: "https://www.linkedin.com/in/your-username/" },
-    { label: "Google Scholar", href: "https://scholar.google.com/citations?user=your-id" },
+    {
+      label: "Google Scholar",
+      href: "https://scholar.google.com/citations?user=your-id",
+    },
   ],
 };
 
